@@ -1,0 +1,577 @@
+/*------------ FONTS */
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/ProximaNova-Regular.ttf');
+}
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/ProximaNova-Bold.ttf');
+}
+@font-face {
+	font-family: 'Proxima Nova Black';
+	src: url('../fonts/ProximaNova-Black.ttf');
+}
+
+/*----------- basic */
+body {
+    padding: 0;
+    margin: 0;
+    color: #5e5e5e;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/*------------- container */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+/*	border: 2px solid red;*/
+}
+
+/*------------ HEADER */
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+#headerInside {
+	display: flex;
+	height: 86px;
+	padding: 36px 27px 26px 27px;
+}
+#headerInside div {
+	height: 24px;
+	line-height: 24px;
+}
+#headerMenu {
+	float: left;
+}	
+#headerMenu a {
+	width: 43px;
+	height: 10px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	text-align: left;
+
+	transition: opacity .2s linear;
+}
+#headerMenu a:hover {
+	opacity: 0.8;
+}
+
+#headerNav {
+	padding: 0 6.2%;
+}
+#headerNav img {
+	margin-left: 200px;
+	margin-right: 40px;
+	float: left;
+	width: auto;
+	height: 24px;
+}
+#headerNav a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 42px;
+
+	width: 82px;
+	height: 10px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 27px;
+	text-align: center;
+
+
+}
+#headerNav a:hover {
+	opacity: 0.8;
+}
+
+#headerInfLang {
+	float: right;
+}
+#headerInfLang svg{
+	float: right;
+	width: 26px;
+	height: 26px;
+	align-items: center;
+	fill: rgba(255, 255, 255, 0.5);
+
+	transition: fill .2s linear;
+}
+#headerInfLang svg:hover {
+	fill: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+#headerInfLang select {
+	float: right;
+	margin-left: 25px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-size: 15px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.75px;
+	line-height: normal;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	text-transform: uppercase;
+
+	transition: opacity .2s linear;
+}
+#headerInfLang option {
+	color: #000;
+}
+#headerInfLang select:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+/*-----------PROMO */
+
+#promoBack {
+	width: 100%;
+	height: 937px;
+	background: url('../images/2-layers.png') no-repeat center;
+	background-size: cover;
+}
+#promo {
+	height: 900px;
+	padding: 362px 327px 0 315px;
+}
+#promoInside {
+	height: 157px;
+}
+#promoName a {
+	width: 535px;
+	height: 69px;
+	color: #bea67c;
+	font-family: "Proxima Nova Bold";
+	font-size: 100px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 20.01px;
+	line-height: 99.96px;
+	text-align: left;
+}
+#promoButton {
+	float: left;
+	padding: 20px 67px 20px 80px;
+	margin-top: 23px;
+	border: 2px solid #ffffff;
+	margin-right: 8px;
+	width: 307px;
+	height: 58px;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	font-family: "Proxima Nova Bold";
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	text-align: left;
+	text-transform: uppercase;
+
+}
+#promoButton:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+#promoShare {
+	height: 37px;
+	padding-right: 25px;
+	float: right;
+	fill: #bea67c;
+}
+#promoShare svg:hover {
+	fill: #bea65c;
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+}
+
+
+
+/*--------------- buklet */
+#buklet {
+	height: 2087px;
+}
+#furniture, #decor {
+	height: 626px;
+	padding: 97px 0;
+}
+.bukletButton {
+	float: left;
+	padding: 0;
+	margin-top: 31px;
+	margin-right: 8px;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: #000;
+	font-family: "Proxima Nova Bold";
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	text-align: left;
+	text-transform: uppercase;
+}
+.bukletButton svg {
+	margin-left: 8px;
+}
+.bukletButton:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+#furniture span {
+	float: left;
+}
+#furniture h1, #furniture p, #furniture button {
+	float: left;
+}
+#furniture .description {
+	padding-left: 166px;
+}
+.description {
+	width: 549px;
+	height: 300px;
+	padding-top: 60px;
+}
+.description h1 {
+	width: 285px;
+	color: #010101;
+	font-family: "Proxima Nova Bold";
+	font-size: 48px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 3.36px;
+	line-height: 100px;
+}
+.description p {
+	width: 361px;
+	height: 64px;
+	color: #464646;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 25px;
+	text-transform: none;
+}
+#decor span {
+	float: right;
+	text-align: right;
+}
+#decor h1, #decor p, #decor button {
+	float: right;
+}
+#decor .description {
+	padding-right: 166px; 
+}
+#decor .bukletButton {
+	float: right;
+	text-align: right;
+}
+#quality {
+	height: 835px;
+}
+#quality div {
+	width: 100%;
+}
+#quality h1 {
+	width: 576px;
+	height: 35px;
+	color: #010101;
+	font-family: "Proxima Nova Bold";
+	font-size: 48px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 3.36px;
+}
+#quality p {
+	width: 545px;
+	height: 37px;
+	color: #464646;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 25px;
+	text-transform: none;
+}
+#qualityText {
+	height: 350px;
+	padding: 95px 312px 0 312px;
+	text-align: center;
+}
+#qualityText svg {
+	margin: 30px 0 0 0;
+}
+#qualityPromo {
+	height: 485px;
+}
+#qualityPromo a {
+	float: left;
+	width: 272px;
+	height: 14px;
+	margin-top: 10px;
+	color: #000000;
+	font-family: "Proxima Nova Bold";
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.4px;
+	text-transform: none;
+	text-align: center;
+}
+/* #qualityPromo a:hover {
+	font-size: 17px;
+} */
+#qualityPromo span {
+	display: inline-block;
+	position: relative;
+	width: 365px;
+	height: 315px;
+	padding: 0 46.5px;
+	text-align: center;
+}
+#qualityPromo img {
+	position: relative;
+}
+#qualityPromo svg {
+	fill: #bea67c;
+	position: absolute;
+	top: 32%;
+	right: 40%;
+}
+#qualityPromo svg:hover {
+	fill: #bea65c;
+	cursor: pointer;
+	width: 70px;
+	height: 70px;
+	top: 31.7%;
+	right: 39.7%;
+}
+
+/* ---------WATCH */
+#watch {
+	height: 916px;
+	width: 100%;
+	background: url(../images/watchBackground.jpg) no-repeat center;
+	background-size: cover;
+	padding: 89.5px 171.5px;
+}
+#watchBorder {
+	height: 737px;
+	border: 1px solid #bea67c;
+}
+#watchInside {
+	height: 100%;
+	padding: 209.5px 0;
+}
+#watchInside span {
+	display: inline-block;
+	width: 697px;
+	float: left;
+}
+#watchInside img {
+	float: left;
+	margin-top: 29px;
+	margin-right: : 50px;
+}
+#line3 {
+	margin-left: 110px; 
+}
+#watchInside h1 {
+	float: right;
+	width: 510px;
+	color: #bea67c;
+	font-family: "Proxima Nova Bold";
+	font-size: 48px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 1.2px;
+	line-height: 60px;
+	text-align: left;
+	text-transform: uppercase;
+}
+#watchInside p {
+	float: right;
+	width: 510px;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 25px;
+	text-align: left;
+	text-transform: none;
+}
+#watchButton {
+	float: left;
+	margin-left: 185px;
+	padding: 16px 67px 10px 80px;
+	border: 2px solid #ffffff;
+	width: 347px;
+	height: 68px;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#watchButton img {
+	margin-top: -4px;
+}
+#watchButton:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/*------- ABOUT US */
+#aboutInside {
+	display: flex;
+	height: 663px;
+	padding: 121.5px 0 111.5px 0;
+}
+#aboutInside span {
+	display: inline-block;
+	width: 624px;
+	float: left;
+}
+#aboutInside img {
+	float: left;
+	margin-top: 29px;
+	margin-right: : 50px;
+}
+#aboutInside h1 {
+	float: right;
+	width: 430px;
+	color: #010101;
+	font-family: "Proxima Nova Bold";
+	font-size: 48px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 3.36px;
+	text-align: left;
+	text-transform: uppercase;
+}
+#aboutInside p {
+	float: right;
+	width: 430px;
+	color: #464646;
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 25px;
+	text-transform: none;
+}
+#aboutDesc {
+	padding: 127px 0;
+	position: absolute;
+	left: 530px;
+}
+#aboutButton {
+	float: left;
+	padding: 0;
+	margin-top: 31px;
+	margin-right: 8px;
+	margin-left: 190px;
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	color: #000;
+	font-family: "Proxima Nova Bold";
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	text-align: left;
+	text-transform: uppercase;
+}
+#aboutButton svg {
+	margin-left: 8px;
+}
+#aboutButton:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/*---------FOOTER */
+footer {
+	display: flex;
+	padding: 20.5px 0;
+	width: 100%;
+	height: 69px;
+	background: url(../images/footerBackground.jpg) no-repeat center;
+	background-size: cover;
+}
+footer span {
+	display: inline-block;
+	width: 33.3333%;
+	text-align: center;
+	height: 28px;
+}
+footer img {
+	width: auto;
+	height: 24px;
+}
+footer h1 {
+	color: #464646;
+	font-family: "Proxima Nova Bold";
+	font-size: 15px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 25px;
+	text-align: left;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: normal;
+}
+footer a {
+	width: 241px;
+	height: 13px;
+	margin: 0;
+	color: #7d7d7d;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 25px;
+	text-align: right;
+	color: #464646;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: normal;
+	text-transform: none;
+}

@@ -1,0 +1,221 @@
+/*------------ FONTS */
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/ProximaNova-Regular.ttf');
+}
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/ProximaNova-Bold.ttf');
+}
+@font-face {
+	font-family: 'Proxima Nova Black';
+	src: url('../fonts/ProximaNova-Black.ttf');
+}
+
+/*----------- basic */
+body {
+    padding: 0;
+    margin: 0;
+    color: #5e5e5e;
+    font-family: "Proxima Nova Regular", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/*------------- container */
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+/*	border: 2px solid red;*/
+}
+
+/*------------ HEADER */
+header {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+#headerInside {
+	height: 86px;
+	padding: 36px 27px 26px 27px;
+}
+#headerInside div {
+	height: 24px;
+	line-height: 24px;
+}
+#headerMenu {
+	float: left;
+}	
+#headerMenu a {
+	width: 43px;
+	height: 10px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	text-align: left;
+
+	transition: opacity .2s linear;
+}
+#headerMenu a:hover {
+	opacity: 0.8;
+}
+
+#headerNav {
+	padding: 0 6.2%;
+}
+#headerNav img {
+	margin-left: 200px;
+	margin-right: 40px;
+	float: left;
+	width: auto;
+	height: 24px;
+}
+#headerNav a {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 42px;
+
+	width: 82px;
+	height: 10px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.38px;
+	line-height: 27px;
+	text-align: center;
+
+
+}
+#headerNav a:hover {
+	opacity: 0.8;
+}
+
+#headerInfLang {
+	float: right;
+}
+#headerInfLang svg{
+	float: right;
+	width: 26px;
+	height: 26px;
+	align-items: center;
+	fill: rgba(255, 255, 255, 0.5);
+
+	transition: fill .2s linear;
+}
+#headerInfLang svg:hover {
+	fill: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+#headerInfLang select {
+	float: right;
+	margin-left: 25px;
+	opacity: 0.5;
+	color: #fff;
+	font-family: "Proxima Nova Bold";
+	font-size: 15px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 0.75px;
+	line-height: normal;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+	text-transform: uppercase;
+
+	transition: opacity .2s linear;
+}
+#headerInfLang option {
+	color: #000;
+}
+#headerInfLang select:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+/*-----------PROMO */
+
+#promoBack {
+	width: 100%;
+	height: 937px;
+	background: url('../images/2-layers.png') no-repeat center;
+}
+#promo {
+	height: 900px;
+	padding: 362px 327px 0 315px;
+}
+#promoInside {
+	height: 157px;
+}
+#promoName {
+	
+}
+#promoName a {
+	width: 535px;
+	height: 69px;
+	color: #bea67c;
+	font-family: "Proxima Nova Bold";
+	font-size: 100px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 20.01px;
+	line-height: 99.96px;
+	text-align: left;
+}
+#promoButton {
+	float: left;
+	padding: 20px 67px 20px 80px;
+	margin-top: 35px;
+	border: 2px solid #ffffff;
+	margin-right: 8px;
+	width: 307px;
+	height: 58px;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	font-family: "Proxima Nova Bold";
+	font-size: 14px;
+	font-weight: 700;
+	font-style: normal;
+	letter-spacing: 2.8px;
+	text-align: left;
+	text-transform: uppercase;
+
+}
+#promoButton:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+#promoShare {
+	height: 37px;
+	padding-right: 25px;
+	float: right;
+	fill: #bea67c;
+}
+#promoShare svg:hover {
+	fill: #bea65c;
+	cursor: pointer;
+	width: 26px;
+	height: 26px;
+}
